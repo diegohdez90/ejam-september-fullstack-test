@@ -6,6 +6,13 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --black: #000;
+  --white: #fff;
+  --subitle-color: #4D5254;
+  --stepper-completed: #85BF55;
+  --stepper-in_progress: #2C7EF8;
+  --stepper-pending: #2C7EF8;
+  --stepper-pending-text-color: #2C7EF8;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,4 +31,76 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.title {
+  display: flex;
+  align-self: center;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  /*color: var(--black);*/
+}
+
+h1 small {
+  display: block;
+  margin-top: 24px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--subitle-color);
+}
+
+.stepper .label {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.stepper .item {
+  align-items: center;
+  gap: 20px;
+}
+
+.stepper .label.current {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.status {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.status.completed {
+  border-color: var(--stepper-completed);
+  background-color: var(--stepper-completed);
+}
+
+.status.in_progress {
+  border-color: var(--stepper-in_progress);
+  background-color: var(--stepper-in_progress);
+}
+
+.status.pending {
+  border-color: var(--stepper-pending);
+  background-color: var(--white);
+  color: var(--stepper-pending-text-color);
+  border-width: 2px;
 }

@@ -1,8 +1,23 @@
+import Footer from '@/components/Footer'
+import Header from '@/components/Header/Header'
+import Nav from '@/components/Nav'
+import ProductDetail from '@/components/ProductDetail'
+import Stepper from '@/components/Stepper'
+import Title from '@/components/Title'
 import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex flex-col items-center justify-between container mx-auto gap-12">
+      <Header />
+      <Nav />
+      <Title
+        title='Wait ! your order in progress.'
+        subtitle='Lorem ipsum dolor sit amet, consectetur adipiscing '
+      />
+      <Stepper current={3} />
+      <ProductDetail />
+      <Footer />
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Get started by editing&nbsp;
