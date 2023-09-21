@@ -13,6 +13,7 @@
   --stepper-in_progress: #2C7EF8;
   --stepper-pending: #2C7EF8;
   --stepper-pending-text-color: #2C7EF8;
+  --product-title-span-color: #2C7EF8;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,16 +22,6 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 
 .title {
@@ -44,7 +35,7 @@ h1 {
   line-height: 48px;
   letter-spacing: 0em;
   text-align: left;
-  /*color: var(--black);*/
+  color: var(--black);
 }
 
 h1 small {
@@ -58,6 +49,25 @@ h1 small {
   color: var(--subitle-color);
 }
 
+
+h2 span {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--product-title-span-color);
+}
+
+h2 {
+  text-transform: capitalize;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
 .stepper .label {
   font-size: 20px;
   font-weight: 400;
@@ -96,6 +106,7 @@ h1 small {
 .status.in_progress {
   border-color: var(--stepper-in_progress);
   background-color: var(--stepper-in_progress);
+  color: var(--white);
 }
 
 .status.pending {
