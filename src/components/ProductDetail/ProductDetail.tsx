@@ -1,3 +1,4 @@
+import { features } from "process";
 import LeftSide from "./LeftSide";
 import RightSide from "./RightSide";
 
@@ -30,7 +31,8 @@ const ProductDetail = ({
   applyDiscountPrice,
   amountInStock,
   description,
-  thumbnailImage
+  thumbnailImage,
+  features
 }: Props) => {
   return <div className="w-full grid grid-cols-2 p-4 gap-8">
     <LeftSide/>
@@ -46,6 +48,7 @@ const ProductDetail = ({
       amountInStock={amountInStock}
       description={description}
       thumbnailImage={thumbnailImage}
+      features={features}
     />
   </div>
 }

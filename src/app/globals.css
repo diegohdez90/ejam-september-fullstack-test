@@ -181,3 +181,24 @@ h2 {
   text-align: left;
   color: var(--product-description-color);
 }
+
+.features li {
+  list-style-image: url('/check.svg');
+  list-style-position: inside;
+}
+
+.features .feat {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.features .feat span.strong {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+}
