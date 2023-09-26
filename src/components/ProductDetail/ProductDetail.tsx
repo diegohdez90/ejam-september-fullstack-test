@@ -21,9 +21,16 @@ interface Props {
 
 const ProductDetail = ({
   productTitle,
+  productName,
   promotion,
-  smallName,  
-  discountedPrice
+  smallName,
+  score,
+  price,
+  discountedPrice,
+  applyDiscountPrice,
+  amountInStock,
+  description,
+  thumbnailImage
 }: Props) => {
   return <div className="w-full grid grid-cols-2 p-4 gap-8">
     <LeftSide/>
@@ -32,6 +39,13 @@ const ProductDetail = ({
       promotion={promotion}
       smallName={smallName}
       discountedPrice={discountedPrice}
+      productName={productName}
+      score={score}
+      price={price}
+      applyDiscountPrice={applyDiscountPrice}
+      amountInStock={amountInStock}
+      description={description}
+      thumbnailImage={thumbnailImage}
     />
   </div>
 }

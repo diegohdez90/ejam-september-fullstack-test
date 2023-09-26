@@ -14,6 +14,9 @@
   --stepper-pending: #2C7EF8;
   --stepper-pending-text-color: #2C7EF8;
   --product-title-span-color: #2C7EF8;
+  --product-original-price-before-apply-discount: #969696;
+  --product-price-color: #2C7EF8;
+  --product-description-color: #4D5254;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -114,4 +117,67 @@ h2 {
   background-color: var(--white);
   color: var(--stepper-pending-text-color);
   border-width: 2px;
+}
+
+.product-title {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.original-price {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--product-original-price-before-apply-discount);
+  text-decoration: line-through;
+}
+
+.discounted-price,
+.price {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--product-price-color);
+}
+
+.stock {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.outer {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #E3EEFF;
+  z-index: -1;
+}
+
+.inner {
+  position: relative;
+  width: 8.53px;
+  height: 8.53px;
+  background-color: #2C7EF8;
+  border-radius: 50%;
+  right: 50%;
+  top: 3px
+}
+
+.product-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--product-description-color);
 }
