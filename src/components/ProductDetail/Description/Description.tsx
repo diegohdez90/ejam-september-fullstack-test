@@ -49,7 +49,7 @@ const Description = ({
       />
       </div>
       <div className="flex flex-col gap-8 place-content-evenly">
-        <div className="flex flex-col place-content-evenly">
+        <div className="flex flex-col place-content-evenly product-details">
           <div className="grid grid-cols-2">
             <h3 className="product-title">{productName}</h3>
             <div className="flex flex-row justify-end items-center gap-4">

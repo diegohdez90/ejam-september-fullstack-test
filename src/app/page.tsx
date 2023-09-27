@@ -35,10 +35,13 @@ function mockupData() {
     ],
     isGuaranteed: true,
     promotion: {
-      save: '53%',
-      numberOfItems: 'each',
-      amount: '$14',
-      earn: '6 extra'
+      text: 'Save <percent> and get <amount> <product> for only <price> Each.',
+      strong: {
+        ['<percent>']: '53%',
+        ['<amount>']: '6 extra',
+        ['<product>']: 'Clarifion',
+        ['<price>']: '$14'
+      }
     },
     featuredComment: {
       user: 'Ken T.',

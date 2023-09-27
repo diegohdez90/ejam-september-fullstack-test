@@ -15,7 +15,7 @@ interface Props {
   description: string
   thumbnailImage: string;
   features: any[];
-  promotion: object;
+  promotion: object | null;
   isGuaranteed: boolean
 }
 
@@ -32,7 +32,8 @@ const ProductDetail = ({
   amountInStock,
   description,
   thumbnailImage,
-  features
+  features,
+  isGuaranteed
 }: Props) => {
   return <div className="w-full grid grid-cols-2 p-4 gap-8">
     <LeftSide/>
@@ -49,6 +50,7 @@ const ProductDetail = ({
       description={description}
       thumbnailImage={thumbnailImage}
       features={features}
+      isGuaranteed={isGuaranteed }
     />
   </div>
 }

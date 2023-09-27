@@ -3,7 +3,7 @@ import Comment from "../Comment";
 
 const LeftSide = () => {
   return (
-    <div className="flex grid grid-col w-full">
+    <div className="flex flex-col w-full justify-between">
       <Image
         src='/product.svg'
         alt="product"

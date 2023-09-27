@@ -1,9 +1,11 @@
 import Description from "../Description";
 import Features from "../Features";
+import Guaranteed from "../Guaranteed";
+import Promotion from "../Promotion";
 
 interface Props {
   productTitle: object | any;
-  promotion: object | any;
+  promotion: object | any | null;
   smallName: string;
   discountedPrice: number;
   productName: string;
@@ -14,6 +16,7 @@ interface Props {
   description: string
   thumbnailImage: string
   features: any[]
+  isGuaranteed: boolean
 }
 
 
@@ -29,10 +32,11 @@ const RightSide = ({
   applyDiscountPrice,
   description,
   thumbnailImage,
-  features
+  features,
+  isGuaranteed
 }: Props) => {
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full gap-8">
       <h2><span className='ocurrence'>{productTitle.occurrence}</span> {productTitle.offer} {promotion.earn} {smallName} for only <span className="price">{promotion.amount} {promotion.numberOfItems}</span> ({Intl.NumberFormat('en', {
         style: 'currency',
     currency: 'usd'
@@ -48,6 +52,12 @@ const RightSide = ({
         thumbnailImage={thumbnailImage}
       />
       <Features features={features} />
+      {
+        promotion && <Promotion promotion={promotion} />
+      }
+      {
+        isGuaranteed && <Guaranteed />
+      }
     </div>
   )
 }

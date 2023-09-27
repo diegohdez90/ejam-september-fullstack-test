@@ -17,6 +17,11 @@
   --product-original-price-before-apply-discount: #969696;
   --product-price-color: #2C7EF8;
   --product-description-color: #4D5254;
+  --disccount-background-color: #EDF3FD;
+  --disccount-icon-background-color: #2C7EF8;
+  --claim-background-color: #59AE43;
+  --secure-payment-border-color: #CFCFCF;
+  --skip-promotion-color: #F82C2C;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -127,6 +132,10 @@ h2 {
   text-align: left;
 }
 
+.product-details {
+  gap: 15px;
+}
+
 .original-price {
   font-size: 16px;
   font-weight: 600;
@@ -182,6 +191,10 @@ h2 {
   color: var(--product-description-color);
 }
 
+.features {
+  gap: 16px;
+}
+
 .features li {
   list-style-image: url('/check.svg');
   list-style-position: inside;
@@ -201,4 +214,86 @@ h2 {
   line-height: 26px;
   letter-spacing: 0em;
   text-align: left;
+}
+
+.disccount {
+  background-color: var(--disccount-background-color);
+  border-radius: 10px;
+  gap: 10px;
+  padding: 12px 16px 12px 16px;
+}
+
+
+.disccount .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: var(--disccount-icon-background-color);
+  border-radius: 50%;
+}
+
+.promotion {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--black);
+}
+
+.promotion span.strong {
+  color: var(--product-title-span-color);
+}
+
+button.claim {
+  background-color: var(--claim-background-color);
+  border-radius: 50px;
+  gap: 10px;
+  padding: 16px 64px 16px 64px;
+  color: var(--white);
+  text-transform: uppercase;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0px;
+}
+
+
+.secure-payment {
+  padding: 8px 16px 8px 16px;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: var(--secure-payment-border-color);
+  color: var(--secure-payment-border-color);
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0px;
+}
+
+.secure-payment > div:nth-child(1) {
+  padding-left: 16px;
+}
+
+.secure-payment > div:nth-child(3) {
+  padding-right: 16px;
+}
+
+.secure-payment > div {
+  padding: 8px;
+}
+
+.no-thanks .skip {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--skip-promotion-color);
+  text-decoration: underline;
+  text-transform: uppercase;
 }

@@ -16,7 +16,7 @@ const Features = ({
 }: Props) => {
   return (
     <div className='flex flex-row'>
-      <ul className='features'>
+      <ul className='features flex flex-col'>
         {
           features.map((feat, index) => (
             <li key={index} className="feat">
