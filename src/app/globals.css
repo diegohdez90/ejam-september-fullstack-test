@@ -25,6 +25,7 @@
   --user-name-comment-color: #333;
   --verified-color: #5BB59A;
   --comment-color: #4D5254;
+  --footer-background-color: #252F3D;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -336,4 +337,30 @@ button.claim {
   letter-spacing: 0em;
   text-align: left;
   color: var(--comment-color);
+}
+
+footer {
+  padding: 24px 0;
+  background-color: var(--footer-background-color);
+}
+
+.footer .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 8px 0px 8px 0px;
+  color: var(--white);
+}
+
+.footer .content .copyright > span:nth-child(1) {
+  padding-right: 8px;
+}
+
+
+.footer .content .copyright > span:nth-child(2) {
+  padding-left: 8px;
+}
+
+.footer .content .copyright > span {
+  padding: 0 16px;
 }

@@ -57,31 +57,33 @@ function mockupData() {
 export default function Home()  {
   const data = mockupData();
   return (
-    <main className="flex flex-col items-center justify-between container mx-auto gap-12">
-      <Header />
-      <Nav />
-      <Title
-        title='Wait ! your order in progress.'
-        subtitle='Lorem ipsum dolor sit amet, consectetur adipiscing '
-      />
-      <Stepper current={3} />
-      <ProductDetail
-        productTitle={data.productTitle}
-        productName={data.productName}
-        smallName={data.smallName}
-        featuredComment={data.featuredComment}
-        score={data.score}
-        price={data.price}
-        discountedPrice={data.discountedPrice}
-        applyDiscountPrice={true}
-        amountInStock={data.amountInStock}
-        thumbnailImage={data.thumbnail}
-        description={data.description}
-        features={data.features}
-        promotion={data.promotion}
-        isGuaranteed={data.isGuaranteed}
-      />
+    <main>
+      <div className="flex flex-col items-center justify-between container mx-auto gap-12">
+        <Header />
+        <Nav />
+        <Title
+          title='Wait ! your order in progress.'
+          subtitle='Lorem ipsum dolor sit amet, consectetur adipiscing '
+        />
+        <Stepper current={3} />
+        <ProductDetail
+          productTitle={data.productTitle}
+          productName={data.productName}
+          smallName={data.smallName}
+          featuredComment={data.featuredComment}
+          score={data.score}
+          price={data.price}
+          discountedPrice={data.discountedPrice}
+          applyDiscountPrice={true}
+          amountInStock={data.amountInStock}
+          thumbnailImage={data.thumbnail}
+          description={data.description}
+          features={data.features}
+          promotion={data.promotion}
+          isGuaranteed={data.isGuaranteed}
+        />
+      </div>
       <Footer />
-    </main>
+  </main>
   )
 }

@@ -48,7 +48,7 @@ const Promotion = ({
         <div>Free Shipping</div>
         <div className='flex flex-row gap-x-2'><Image
             src="/lock.svg"
-            alt="check"
+            alt="lock"
             width={12}
             height={12}
             priority
