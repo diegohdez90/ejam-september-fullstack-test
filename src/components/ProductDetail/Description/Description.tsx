@@ -1,7 +1,6 @@
 import { Fragment } from 'react';
 import Image from "next/image";
-import { StarIcon as RateStar } from '@heroicons/react/24/solid';
-import { StarIcon as Star } from '@heroicons/react/24/outline';
+import Rate from '../Rate';
 
 interface Props {
   productName: string;
@@ -26,16 +25,7 @@ const Description = ({
   thumbnailImage
 }: Props) => {
 
-  const Rate = () => {
-    let jsx: React.ReactNode[] = [];
-    let index = 1
-    while (index <= 5) {
-      if (index <= score) jsx.push(<RateStar width={16} color="#FFC000" />);
-      else jsx.push(<Star width={16} />)
-      index++
-    }
-    return jsx;
-  }
+
   return (
     <div className="grid grid-cols-2">
       <div>
@@ -66,7 +56,7 @@ const Description = ({
             </div>
           </div>
           <div className="flex flex-row">
-            <Rate />
+            <Rate score={score} />
           </div>
           <div className="flex flex-row items-center stock">
             <div className="flex flex-row w-fit h-fit">

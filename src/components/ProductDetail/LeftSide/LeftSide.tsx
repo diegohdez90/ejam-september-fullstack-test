@@ -1,9 +1,15 @@
 import Image from "next/image";
 import Comment from "../Comment";
 
-const LeftSide = () => {
+interface Props {
+  comment: any;
+}
+
+const LeftSide = ({
+  comment
+}: Props) => {
   return (
-    <div className="flex flex-col w-full justify-between">
+    <div className="flex flex-col w-full justify-around">
       <Image
         src='/product.svg'
         alt="product"
@@ -12,7 +18,9 @@ const LeftSide = () => {
         fill={false}
         style={{height: "100%", width:"100%", position: 'initial'}}
       />
-      <Comment />
+      <Comment
+        comment={comment}
+      />
     </div>
   )
 }

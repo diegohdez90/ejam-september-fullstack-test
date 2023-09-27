@@ -22,6 +22,9 @@
   --claim-background-color: #59AE43;
   --secure-payment-border-color: #CFCFCF;
   --skip-promotion-color: #F82C2C;
+  --user-name-comment-color: #333;
+  --verified-color: #5BB59A;
+  --comment-color: #4D5254;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -296,4 +299,41 @@ button.claim {
   color: var(--skip-promotion-color);
   text-decoration: underline;
   text-transform: uppercase;
+}
+
+.user-profile {
+  gap: 15px;
+}
+
+
+.user-description {
+  gap: 10px;
+}
+
+.user-profile .user {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--user-name-comment-color);
+}
+
+.user-profile .verified {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--verified-color);
+  gap: 10px;
+}
+
+.comment {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--comment-color);
 }

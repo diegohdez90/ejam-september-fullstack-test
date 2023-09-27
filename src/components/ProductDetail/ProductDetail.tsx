@@ -33,10 +33,13 @@ const ProductDetail = ({
   description,
   thumbnailImage,
   features,
-  isGuaranteed
+  isGuaranteed,
+  featuredComment
 }: Props) => {
   return <div className="w-full grid grid-cols-2 p-4 gap-8">
-    <LeftSide/>
+    <LeftSide
+      comment={featuredComment}
+    />
     <RightSide
       productTitle={productTitle}
       promotion={promotion}

@@ -23,9 +23,9 @@ const Promotion = ({
         <span className='icon'>
           <Image
             src="/percent.svg"
-            alt="check"
-            width={20}
-            height={16}
+            alt="percent"
+            width={32}
+            height={32}
             priority
           />
         </span>
