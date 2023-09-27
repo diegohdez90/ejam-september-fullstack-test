@@ -58,8 +58,8 @@ export default function Home()  {
   const data = mockupData();
   return (
     <main>
-      <div className="flex flex-col items-center justify-between container mx-auto gap-12">
-        <Header />
+      <Header />
+      <div className="flex flex-col items-center justify-between container mx-auto gap-12 my-4">
         <Nav />
         <Title
           title='Wait ! your order in progress.'
