@@ -54,7 +54,64 @@ const Promotion = ({
             priority
           />
         Secure 256-Bit SSL Encryption</div>
-        <div>Pamyment</div>
+        <div className='flex flex-row gap-2'>
+          <Image
+            src="/visa.svg"
+            alt="visa"
+            width={0}
+            height={0}
+            fill={false}
+            style={{height: "100%", width:"100%", position: 'initial'}}
+          />
+          <Image
+            src="/shop-pay.svg"
+            alt="shop-pay"
+            width={0}
+            height={0}
+            fill={false}
+            style={{height: "100%", width:"100%", position: 'initial'}}
+          />
+          <Image
+            src="/paypal.svg"
+            alt="paypal"
+            width={0}
+            height={0}
+            fill={false}
+            style={{height: "100%", width:"100%", position: 'initial'}}
+          />
+          <Image
+            src="/mastercard.svg"
+            alt="mastercard"
+            width={0}
+            height={0}
+            fill={false}
+            style={{height: "100%", width:"100%", position: 'initial'}}
+          />
+          <Image
+            src="/google-pay.svg"
+            alt="google-pay"
+            width={0}
+            height={0}
+            fill={false}
+            style={{height: "100%", width:"100%", position: 'initial'}}
+          />
+          <Image
+            src="/apple-pay.svg"
+            alt="apple-pay"
+            width={0}
+            height={0}
+            fill={false}
+            style={{height: "100%", width:"100%", position: 'initial'}}
+          />
+          <Image
+            src="/amex.svg"
+            alt="amex"
+            width={0}
+            height={0}
+            fill={false}
+            style={{height: "100%", width:"100%", position: 'initial'}}
+          />
+        </div>
       </div>
       <div className='no-thanks mx-auto'>
         <button className='skip'>No thanks, I don’t want this.</button>
