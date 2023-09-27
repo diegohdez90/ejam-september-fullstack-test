@@ -14,8 +14,8 @@ const Item = ({
   status,
   isCurrent
 }: Props) => {
-  return <div className="flex flex-row item">
-    <Status status={status} step={step} /><span className={`label ${isCurrent ? 'current' : null}`}>Step {step}: {label}</span>
+  return <div className="flex flex-col md:flex-row item">
+    <Status status={status} step={step} /><span className={`flex flex-row label ${isCurrent ? 'current' : ''}`}><span className="xs:hidden md:block">Step {step}: </span>{label}</span>
   </div>
 }
 

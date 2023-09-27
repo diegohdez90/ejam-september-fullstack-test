@@ -1,33 +1,24 @@
 import Image from "next/image";
 
 const Nav = () => {
-  return <div className="flex flex-row w-full justify-between">
-    <div>
-      <Image
+  return <div className="flex flex-row w-full grid  grid-cols-12 justify-between">
+    <div className="col-span-6">
+      <img
         src="/clarifon.svg"
         alt="calrifon"
-        width={0}
-        height={0}
-        fill={false}
-        style={{height: "100%", width:"100%", position: 'initial'}}
+        className="object-contain"
       />
     </div>
-    <div className="flex flex-row gap-8">
-      <Image
+    <div className="flex flex-row gap-2 col-span-6 justify-end">
+      <img
         src="/mcafee.svg"
         alt="mcafee"
-        width={0}
-        height={0}
-        fill={false}
-        style={{height: "100%", width:"100%", position: 'initial'}}
+        className="object-contain"
       />
-      <Image
+      <img
         src="/norton.svg"
         alt="norton"
-        width={0}
-        height={0}
-        fill={false}
-        style={{height: "100%", width:"100%", position: 'initial'}}
+        className="object-contain"
       />
     </div>
   </div>
