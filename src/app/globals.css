@@ -540,6 +540,20 @@ footer {
     letter-spacing: 0em;
     text-align: left;
   }
+
+  .footer .content {
+    display: grid;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .footer .content > div:nth-child(2) {
+    justify-content: center;
+  }
 }
 
 @media (min-width: 640px) {

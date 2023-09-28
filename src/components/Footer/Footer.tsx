@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return <footer className="footer">
-    <div className="content">
+    <div className="content md:flex xs:grid xs:grid-cols-1">
       <div className="copyright divide-x">
         <span>Copyright &copy; 2023</span>
         <span>clarifionsupport@clarifion.com</span>
