@@ -27,8 +27,8 @@ const Description = ({
 
 
   return (
-    <div className="grid grid-cols-2">
-      <div>
+    <div className="grid grid-cols-12">
+      <div className='col-span-5'>
         <Image
         src={thumbnailImage}
         alt="product"
@@ -38,7 +38,7 @@ const Description = ({
         style={{height: "100%", width:"100%", position: 'initial'}}
       />
       </div>
-      <div className="flex flex-col gap-8 place-content-evenly">
+      <div className="flex flex-col col-span-7 gap-8 place-content-evenly">
         <div className="flex flex-col place-content-evenly product-details">
           <div className="grid grid-cols-2">
             <h3 className="product-title">{productName}</h3>
@@ -71,7 +71,7 @@ const Description = ({
             }}>Sold out</span>}
           </div>
         </div>
-        <div className="flex flex-row">
+        <div className="flex flex-row xs:hidden sm:flex">
           <p className='product-description'>{description}</p>
         </div>
       </div>

@@ -9,7 +9,7 @@ const LeftSide = ({
   comment
 }: Props) => {
   return (
-    <div className="flex flex-col w-full justify-around">
+    <div className="flex flex-col w-full justify-around xs:hidden sm:flex">
       <Image
         src='/product.svg'
         alt="product"

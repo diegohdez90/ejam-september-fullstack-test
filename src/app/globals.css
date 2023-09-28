@@ -313,6 +313,23 @@ button.claim {
   text-transform: uppercase;
 }
 
+.guarantee-descripiion {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--comment-color);
+}
+
+.guarantee-descripiion span.strong {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
 .user-profile {
   gap: 15px;
 }
@@ -397,6 +414,129 @@ footer {
     font-size: 12px;
     font-weight: 700;
     line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  h2 span {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .product-title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .original-price {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .discounted-price,
+  .price {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .stock {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .product-description {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .features .feat {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .features .feat span.strong {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  
+  .promotion {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  button.claim {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  .secure-payment>div:nth-child(1) {
+    border-right: 1px solid;
+    border-right-color: var(--secure-payment-border-color);
+  }
+
+  .secure-payment>div:nth-child(3) {
+    border-top: 1px solid;
+    border-top-color: var(--secure-payment-border-color);
+  }
+
+  .no-thanks .skip {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  .guarantee-descripiion {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .guarantee-descripiion span.strong {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 17px;
     letter-spacing: 0em;
     text-align: left;
   }

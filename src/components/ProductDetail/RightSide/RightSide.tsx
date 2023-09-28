@@ -51,6 +51,9 @@ const RightSide = ({
         description={description}
         thumbnailImage={thumbnailImage}
       />
+      <div className="flex flex-row md:hidden">
+        <p className='product-description xs:text-center'>{description}</p>
+      </div>
       <Features features={features} />
       {
         promotion && <Promotion promotion={promotion} />

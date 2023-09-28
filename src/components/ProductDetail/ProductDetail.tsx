@@ -36,7 +36,7 @@ const ProductDetail = ({
   isGuaranteed,
   featuredComment
 }: Props) => {
-  return <div className="w-full grid grid-cols-2 p-4 gap-8">
+  return <div className="w-full grid grid-cols-2 p-4 gap-8 xs:grid-cols-1 sm:grid-cols-2">
     <LeftSide
       comment={featuredComment}
     />

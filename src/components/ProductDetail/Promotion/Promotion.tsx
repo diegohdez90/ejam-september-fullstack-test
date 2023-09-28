@@ -24,8 +24,8 @@ const Promotion = ({
           <Image
             src="/percent.svg"
             alt="percent"
-            width={32}
-            height={32}
+            width={12.8}
+            height={12.8}
             priority
           />
         </span>
@@ -44,9 +44,9 @@ const Promotion = ({
           />
         </span>
       </button>
-      <div className="secure-payment grid grid-cols-3 divide-x">
-        <div>Free Shipping</div>
-        <div className='flex flex-row gap-x-2'><Image
+      <div className="secure-payment grid xs:grid-cols-2 sm:grid-cols-3 items-center md:divide-x">
+        <div className='col-span-1'>Free Shipping</div>
+        <div className='flex flex-row gap-x-2 col-span-1'><Image
             src="/lock.svg"
             alt="lock"
             width={12}
@@ -54,7 +54,7 @@ const Promotion = ({
             priority
           />
         Secure 256-Bit SSL Encryption</div>
-        <div className='flex flex-row gap-2'>
+        <div className='flex flex-row xs:col-span-2 sm:col-span-1 gap-2 justify-center'>
           <Image
             src="/visa.svg"
             alt="visa"
