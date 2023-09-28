@@ -59,7 +59,7 @@ export default function Home()  {
   return (
     <main>
       <Header />
-      <div className="flex flex-col items-center justify-between md:container md:mx-auto gap-12 my-4">
+      <div className="flex flex-col items-center justify-between container mx-auto gap-12 my-4">
         <Nav />
         <Title
           title='Wait ! your order in progress.'
